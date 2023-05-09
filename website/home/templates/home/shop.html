@@ -51,7 +51,7 @@
                   <li><a href="#"><span class="icon icon-person"></span></a></li>
                   <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
                   <li>
-                    <a href="{% url 'home:cart' product.id %}" class="site-cart">
+                    <a href="{% url 'home:cart' %}" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
                       <span class="count">2</span>
                     </a>
@@ -148,7 +148,7 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="{% url 'home:single' product.id %}"><img src="{{product.image}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{% url 'home:single' product.id %}"><img src="{{product.imageurl}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="{% url 'home:single' product.id %}">{{product.name}}</a></h3>

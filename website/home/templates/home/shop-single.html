@@ -2,7 +2,7 @@
 <html lang="en">
 {% load static %}
 <head>
-  <title>Fashion-shop</title>0p0p0p0p0p0p0p0p0p0p0p0p0p0p0p0p0p
+  <title>Fashion-shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,7 +51,7 @@
                   <li><a href="#"><span class="icon icon-person"></span></a></li>
                   <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
                   <li>
-                    <a href="{% url 'home:cart' produc.id %}" class="site-cart">
+                    <a href="{% url 'home:cart' %}" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
                       <span class="count">2</span>
                     </a>
@@ -115,7 +115,7 @@
         <div class="row">
           <div class="col-md-6">
             <img
-              src="{{produc.image}}"
+              src="{{produc.imageurl}}"
               alt="Image" class="img-fluid">
           </div>
           <div class="col-md-6">
@@ -159,7 +159,7 @@
               </div>
 
             </div>
-            <p><a data-product="{{product.name}}" data-action="add" href="{% url 'home:cart' produc.id %}" class="buy-now btn btn-sm btn-primary">Thêm vào giỏ hàng</a></p>
+            <p><a data-product="{{product.name}}" data-action="add" href="{% url 'home:cart' %}" class="buy-now btn btn-sm btn-primary">Thêm vào giỏ hàng</a></p>
 
           </div>
         </div>
