@@ -26,8 +26,7 @@
 
 <body>
   {% block body %}
-  {% for product in products %}
-  {% csrf_token %}
+ 
   <div class="site-wrap">
     <header class="site-navbar" role="banner">
       <div class="site-navbar-top">
@@ -200,7 +199,7 @@
                         alt="Image placeholder" class="img-fluid" />
                     </figure>
                     <div class="block-4-text p-4">
-                      <h3><a href="{% url 'home:single' product.id %}">T-shirt</a></h3>
+                      <h3><a href="/">T-shirt</a></h3>
                       <p class="mb-0">LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
                       <p class="text-primary font-weight-bold">300.000$</p>
                     </div>
@@ -214,7 +213,7 @@
                         alt="Image placeholder" class="img-fluid" />
                     </figure>
                     <div class="block-4-text p-4">
-                      <h3><a href="{% url 'home:single' product.id %}">T-shirt</a></h3>
+                      <h3><a href="/">T-shirt</a></h3>
                       <p class="mb-0">LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
                       <p class="text-primary font-weight-bold">300.000$</p>
                     </div>
@@ -228,7 +227,7 @@
                         alt="Image placeholder" class="img-fluid" />
                     </figure>
                     <div class="block-4-text p-4">
-                      <h3><a href="{% url 'home:single' product.id %}">T-shirt </a></h3>
+                      <h3><a href="">T-shirt </a></h3>
                       <p class="mb-0">LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
                       <p class="text-primary font-weight-bold">300.000$</p>
                     </div>
@@ -242,7 +241,7 @@
                         alt="Image placeholder" class="img-fluid" />
                     </figure>
                     <div class="block-4-text p-4">
-                      <h3><a href="{% url 'home:single' product.id %}">T-shirt</a></h3>
+                      <h3><a href="">T-shirt</a></h3>
                       <p class="mb-0">LEVENTS® 3RD ANNIVERSARY TEE/ WHITE</p>
                       <p class="text-primary font-weight-bold">300.000$</p>
                     </div>
@@ -335,7 +334,7 @@
         </div>
       </footer>
     </div>
-    {% endfor %}
+    
     {% endblock %}
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
