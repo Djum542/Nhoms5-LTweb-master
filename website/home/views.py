@@ -71,7 +71,7 @@ def cart(request):
         carts = orders.orderitem_set.all()
     else:
         carts = []
-    return render(request, 'home/cart.html')
+    return render(request, 'home/cart.html', {'carts':carts, 'orders':orders})
         # order = {'get_cart_item':0}
     # product = product.objects.get(id = product_id)
     # cart = request.sessions.get('cart', {})
@@ -134,4 +134,4 @@ def out(request):
         carts = orders.orderitem_set.all()
     else:
         carts = []
-        return render(request, 'home/order.html', {'items':items, 'orders':orders})
+    return render(request, 'home/order.html', {'carts':carts, 'orders':orders})
